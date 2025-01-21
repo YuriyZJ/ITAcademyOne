@@ -2,7 +2,7 @@ package Lesson06;
 
 //16. Вычислить: (1+2)*(1+2+3)*...*(1+2+...+10).
 
-public class Lesson06H016 {
+public class Lesson06H16 {
     public static void main(String[] args){
         double prom = 1;
 
