@@ -1,6 +1,7 @@
 package Lesson10;
 
 import java.util.Random;
+//1. Сортировка выбором
 
 public class Lesson10M01 {
         public static void main(String[] args) {
