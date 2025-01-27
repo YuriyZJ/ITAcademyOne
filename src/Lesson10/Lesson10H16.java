@@ -2,6 +2,7 @@ package Lesson10;
 
 public class Lesson10H16 {
     public static void main(String[] args){
+
         int size = 10;
 
         int[][] arr = new int[size][size];
