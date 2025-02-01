@@ -21,7 +21,6 @@ public class Main {
         group.add(new Student(9, "Морозов", "Т.У.", 10208110, new int[]{9, 9, 9, 9, 9}));
         group.add(new Student(10, "Фёдоров", "Ф.Х.", 10208110, new int[]{8, 9, 10, 9, 8}));
 
-
         group.print();
 
         group.findTopStudents();

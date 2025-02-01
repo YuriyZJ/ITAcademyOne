@@ -3,6 +3,9 @@ package Lesson12.H03;
 //3. Создайте класс с именем Student, содержащий поля: фамилия и инициалы, номер группы, успеваемость (массив из пяти элементов).
 // Создайте массив из десяти элементов такого типа. Добавьте возможность вывода фамилий и номеров групп студентов, имеющих оценки, равные только 9 или 10.
 
+import java.util.Arrays;
+import java.util.Objects;
+
 public class Student {
     private int id;
     private String lastName;
@@ -66,5 +69,17 @@ public class Student {
             }
         }
         return true;
+    }
+
+    @Override
+    public boolean equals(Object o) {
+        if (o == null || getClass() != o.getClass()) return false;
+        Student student = (Student) o;
+        return id == student.id && groupNumber == student.groupNumber && Objects.equals(lastName, student.lastName) && Objects.equals(initials, student.initials) && Objects.deepEquals(progress, student.progress);
+    }
+
+    @Override
+    public int hashCode() {
+        return Objects.hash(id, lastName, initials, groupNumber, Arrays.hashCode(progress));
     }
 }

@@ -4,17 +4,19 @@ import java.util.ArrayList;
 import java.util.List;
 
 public class Group {
-    private List<Student> student = new ArrayList<>();
+    private List<Student> student = new ArrayList<>(); //создаёт список студентов, который можно заполнять объектами класса Student.
 
     public Group(){
     }
 
-    public Group(List<Student> student){
+    public Group(List<Student> student){ // конструктор используется при создании объекта класса Group. Он позволяет инициализировать группу сразу списком студентов.
         this.student = student;
     }
 
-    public boolean add(Student st) {
-        return student.add(st);
+
+    //Student — это тип параметра, который означает, что в метод можно передать объект класса Student. st — это имя переменной, которое будет использоваться внутри метода для работы с переданным объектом.
+    public boolean add(Student st) { //метод добавляет одного конкретного студента в список. Он нужен, если мы создаём Group, а затем добавляем студентов по одному.
+        return student.add(st); //именно boolean позволяет проверить, добавился ли студент в группу. Если ты уверен, что добавление всегда проходит успешно, можно оставить void, но использование boolean даёт гибкость в будущем.
     }
 
     // Новый метод для поиска студентов, у которых все оценки 9 или 10
