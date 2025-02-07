@@ -1,19 +1,20 @@
 package Lesson03;
 
 public class Lesson03T01 {
+    public static void main(String[] args) {
+        int x = 199;
+        int y = 201;
+
+        int a = x + y;
+        int b = x - y;
+        int c = x * y;
+        int d = x / y;
+
+        System.out.print(a + "/n" + b + "/n" + c + "/n" + d);
+    }
 }
 /*
 public class Lesson03T01{
-    public static void main(String[] args){
-    int x = 199;
-    int y = 201;
-
-    int a = x + y;
-    int b = x - y;
-    int c = x * y;
-    int d = x / y;
-
-    System.out.print(a + "/n" + b + "/n" + c + "/n" + d);
 
 public class Lesson03T01{
     public static void main (String[] args) {

@@ -14,8 +14,7 @@ public class Lesson05H02 {
 
         if (x < y){
             System.out.println("yes");
-        }
-        else{
+        } else {
             System.out.println("no");
         }
     }

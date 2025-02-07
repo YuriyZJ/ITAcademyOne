@@ -1,11 +1,9 @@
 package Lesson21DAO.logic;
 
-import Lesson21DAO.dao.DaoProvider;
-import Lesson21DAO.dao.NoteBookDao;
 import Lesson21DAO.logic.impl.NotebookLogicImpl;
 
 public class ProviderLogic {
-    private static final ProviderLogic INSTANCE = new ProviderLogic(); // создается объект который будет только в одном экземпляре, затем будет по ссылке к нему обращаться
+    private static final ProviderLogic INSTANCE = new ProviderLogic(); // создается объект, который будет только в одном экземпляре, затем будет по ссылке к нему обращаться
 
     private ProviderLogic() {}
 
